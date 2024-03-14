@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    </P> quais principais causas do lixo eletronico</option>
+    <br>
+    <select id="q1">
+        <option selected> escolha a alternativa </option>
+        <option value='1'> agua suja </option>
+        <option value='2'> o rapido avanco tecnologico </option>'
+        <option value='3'> desmatamnto </option>
+        <option value='4'> todas as alternativas estao coreta </option>
+    </select>
+    <br>
+    </p> em que posicao esta do ranking de lixo no brasil esta?</p>
+    <select id="q2">
+        <option selected> primeiro </option>
+        <option value='1'> segundo </option>
+        <option value='2'> terceiro</option>'
+        <option value='3'> quarta</option>
+        <option value='4'> todas as aoternativas estao coreta </option>
+
+    </select>
+</p> Porque o lixo eletrônico é um problema? .</p>
+    <br>
+    <select id="q3">
+        <option selected> escolha a alternativa coreta </option>
+        <option value='1'>porque geramos um impacto ambiental, </option>
+        <option value='2'> ontaminação que é propagada na água, no solo, no ar, na fauna e flora. </option>
+        <option value='3'>vemos o impacto social na população residente no entorno desses </option>
+        <option value='4'>decorrentes do não tratamento dos resíduos. </option>
+    </select>
+
+</html>
+
+<p> Quais são os 4 tipos de lixo eletrônico?.</p>
+<select id="q4">
+    <option selected> escolha a alternativa coreta </option>
+    <option value='1'>Geladeiras, congeladores e outros equipamentos refrigeradores. </option>
+    <option value='2'> Equipamentos eletrônicos de consumo e painéis solares. </option>
+    <option value='3'>Televisores, monitores e telas </option>
+    <option value='4'>Máquinas de venda automática.</option>
+</select>
+<br>
+<button id="botao">calcular</button>
+<div id="resultado"></div>
+<script>
+    let q1 = document.getElementById('q1');
+    let q2 = document.getElementById('q2');
+    let q3 = document.getElementById('q3');
+    let q4 = document.getElementById('q4');
+    let resultado = document.getElementById('resultado');
+    let botao = document.getElementById('botao');
+
+    function verificar() {
+        let contador = 0;
+
+        if (q1.value == '2')
+            contador++;
+
+        if (q2.value == '4')
+            contador++;
+
+        if (q3.value == '1')
+            contador++;
+
+        if (q4.value == '1')
+            contador++;
+
+        resultado.innerHTML = `<h1>Você acertou ${contador}</h1>`;
+    }
+
+    botao.addEventListener('click', verificar, false);
+
+</script>
+
+</html>s
